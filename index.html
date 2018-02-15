@@ -7,6 +7,7 @@
             width:300px;
             height:300px;
             overflow: visible;
+            border: 1px solid black;
         }
         
         #rectangle{
@@ -30,12 +31,16 @@
         #ellipse{
             rx: 100px;
             ry: 50px;
-            cx: 20px;
-            cy:40px;
+            cx: 120px;
+            cy:140px;
             fill: #555;
             stroke: #333;
             stroke-width: 5px;
             
+        }
+        #line{
+            stroke-width: 5px;
+            stroke: #333;
         }
     </style>
 </head>
@@ -49,6 +54,9 @@
     </svg>
     <svg class = "container">
         <ellipse id= "ellipse"></ellipse>
+    </svg>
+    <svg class = "container">
+        <line id= "line" x1="0" y1="0" x2="200" y2="200"  ></line>
     </svg>
 </body>
 
