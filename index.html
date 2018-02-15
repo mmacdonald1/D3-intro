@@ -3,9 +3,9 @@
 <head>
     <title>Server Example</title>
     <style>
-        #container{
-            width:500px;
-            height:500px;
+        .container{
+            width:300px;
+            height:300px;
             overflow: visible;
         }
         
@@ -14,17 +14,41 @@
             height: 100px;
             fill: #F44336;
             stroke: #333;
-            stroke-width: 10;
+            stroke-width: 10px;
             overflow: visible;
             x: 25px;
             y:25px;
+        }
+        #circle{
+            r: 100px;
+            cx: 100px;
+            cy: 100px;
+            fill: #555;
+            stroke: #333;
+            stroke-width: 5px;
+        }
+        #ellipse{
+            rx: 100px;
+            ry: 50px;
+            cx: 20px;
+            cy:40px;
+            fill: #555;
+            stroke: #333;
+            stroke-width: 5px;
+            
         }
     </style>
 </head>
 <body>
     <h1>Hello!</h1>
-    <svg id = "container">
+    <svg class = "container">
         <rect id= "rectangle"></rect>
+    </svg>
+    <svg class = "container">
+        <circle id= "circle"></circle>
+    </svg>
+    <svg class = "container">
+        <ellipse id= "ellipse"></ellipse>
     </svg>
 </body>
 
