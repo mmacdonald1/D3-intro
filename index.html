@@ -2,8 +2,56 @@
 <html>
 <head>
     <title>Server Example</title>
+    <style>
+        #container{
+            width:500px;
+            height:500px;
+            overflow: visible;
+        }
+        
+        #rectangle{
+            width: 100px;
+            height: 100px;
+            fill: #F44336;
+            stroke: #333;
+            stroke-width: 10;
+            overflow: visible;
+            x: 25px;
+            y:25px;
+        }
+    </style>
 </head>
 <body>
     <h1>Hello!</h1>
+    <svg id = "container">
+        <rect id= "rectangle"></rect>
+    </svg>
 </body>
+
+<script>
+    var numbers = [1,2,3,4,5];
+    
+    console.log(numbers);
+    
+    var person = {
+        name: 'John',
+        age: 20,
+        greeting: function(){
+            console.log("hi my name is "+ this.name+".I'm "+ this.age + " years old.")
+        }
+        
+        var people =[{
+        name: 'John',
+        age: 20,
+    },
+        {
+            name: 'Sue',
+            age:30,
+        }
+        ];
+    
+    
+    };
+</script>
+
 </html>
