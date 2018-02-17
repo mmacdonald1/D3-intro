@@ -137,7 +137,7 @@
         <use xlink:href="#defs" x="100" y="100"></use>
         <use xlink:href="#defs" x="200" y="200"></use>
     </svg>
-        <svg class = "container">
+    <svg class = "container">
         <defs>
            <g id= "def">
             <rect  width= "50" height = "50" x="0" y="0"></rect>
@@ -148,6 +148,26 @@
 
         <use xlink:href="#def"></use>
 
+    </svg>
+    <svg class = "container">
+        <defs>
+            <path id="custom_text_path" d="M0,0 L300,300"></path>
+        </defs>
+        <text x="100" y="100" stroke="#000" font-size="30">
+           <textpath xlink:href="#custom_text_path">
+               Hello World!
+           </textpath>
+        </text>
+    </svg>
+        <svg class = "container">
+        <defs>
+            <path id="custom_text_path2" d="M0,0 Q0,100 150,100"></path>
+        </defs>
+        <text x="10" y="100" stroke="#000" font-size="30">
+           <textpath xlink:href="#custom_text_path2">
+               Hello World!
+           </textpath>
+        </text>
     </svg>
 </body>
 
