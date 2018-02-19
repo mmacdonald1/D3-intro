@@ -33,6 +33,8 @@
 //d3 binds your data to the p tag in a loop onto the HTML Doc
 //to be sure data is binded go to array data
 
+//DISPLAYING DATA----------------------------------------------
+
 
 var dataset=[10,20,30,40,50];
 
@@ -41,7 +43,25 @@ var el = d3.select('body')
 .data(dataset)
 .enter()
 .append('p')
-.text("Hello World")
+.text(function(d){
+    return 'This paragraph is binded to the number '+d;
+})
+.attr('class', function(d){
+  if(d<25){
+    return 'foo';
+}else{
+      return null;
+}})
+.classed('bar', function(d){
+    return d<25; // 10< 25 =true
+})
+.style('color',function(d){
+    if(d>25){
+        return 'red';
+    }else{
+        return 'blue';
+    }
+})
 ;
 
 console.log(el);
