@@ -19,11 +19,29 @@
 
 //cannot add more than one class using attr('class','foo') use classed('foo', true)
 
+//var el = d3.select('body')
+//.append('p')
+//.classed('foo', true)
+//.classed('bar', true)
+//.text('Hello World')
+//.style('color', 'blue');
+//
+//console.log(el);
+
+//DATA BINDING-------------------------------------------------
+//d3 puts your data in the enter mode
+//d3 binds your data to the p tag in a loop onto the HTML Doc
+//to be sure data is binded go to array data
+
+
+var dataset=[10,20,30,40,50];
+
 var el = d3.select('body')
+.selectAll('p')
+.data(dataset)
+.enter()
 .append('p')
-.classed('foo', true)
-.classed('bar', true)
-.text('Hello World')
-.style('color', 'blue');
+.text("Hello World")
+;
 
 console.log(el);
